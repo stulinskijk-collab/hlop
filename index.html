@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Хлоп — брови и ресницы</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Студия бровей и ресниц «Хлоп» в Красноярске. Коррекция, окрашивание, ламинирование, наращивание. Онлайн-запись.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#hero" class="logo">хлоп<span>!</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#team">Мастера</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#booking" class="btn btn-ink btn-sm">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="chip chip-yellow">Красноярск · брови и ресницы</p>
+        <h1 class="hero-title">
+          <span class="w">Взгляд,</span>
+          <span class="w">от&nbsp;которого</span>
+          <span class="w hl">хлопают</span>
+        </h1>
+        <p class="hero-lead">Делаем брови и ресницы за час, без сюрпризов в прайсе. Записывайтесь онлайн, мастер подтвердит время.</p>
+        <div class="hero-cta">
+          <a href="#booking" class="btn btn-yellow">Выбрать время <span class="arr">→</span></a>
+          <a href="#services" class="btn btn-ghost">Цены</a>
+        </div>
+        <ul class="hero-facts">
+          <li><b>4,9</b><span>средняя оценка</span></li>
+          <li><b>6</b><span>лет работаем</span></li>
+          <li><b>2 300 ₽</b><span>классика ресниц</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg class="badge" viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <circle cx="100" cy="100" r="98" class="badge-bg"/>
+          <text class="badge-txt"><textPath href="#circ">запись онлайн ✦ запись онлайн ✦ запись онлайн ✦ </textPath></text>
+        </svg>
+        <div class="eye-wrap" id="eyeWrap">
+          <svg class="eye" viewBox="0 0 320 200" id="eye">
+            <defs>
+              <clipPath id="eyeClip"><path d="M20,100 Q160,-10 300,100 Q160,210 20,100Z"/></clipPath>
+            </defs>
+            <path class="eye-white" d="M20,100 Q160,-10 300,100 Q160,210 20,100Z"/>
+            <g clip-path="url(#eyeClip)">
+              <g id="pupil">
+                <circle cx="160" cy="100" r="54" class="iris"/>
+                <circle cx="160" cy="100" r="26" class="pupil"/>
+                <circle cx="176" cy="84" r="10" class="glint"/>
+              </g>
+              <rect id="lid" x="0" y="-200" width="320" height="200" class="lid"/>
+            </g>
+            <path class="eye-line" d="M20,100 Q160,-10 300,100"/>
+            <g class="lashes">
+              <path d="M48,78 L30,52"/><path d="M78,58 L66,28"/><path d="M112,44 L106,10"/>
+              <path d="M148,38 L148,2"/><path d="M184,40 L192,6"/><path d="M220,50 L236,18"/>
+              <path d="M252,66 L276,40"/><path d="M280,86 L306,68"/>
+            </g>
+            <path class="eye-line" d="M20,100 Q160,210 300,100"/>
+          </svg>
+        </div>
+        <img class="float f1" src="assets/star.svg" alt="">
+        <img class="float f2" src="assets/flower.svg" alt="">
+        <img class="float f3" src="assets/heart.svg" alt="">
+        <img class="float f4" src="assets/star.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>ламинирование</span><span>наращивание 2D</span><span>окрашивание хной</span><span>коррекция</span><span>лиса</span><span>мокрый эффект</span>
+      <span>ламинирование</span><span>наращивание 2D</span><span>окрашивание хной</span><span>коррекция</span><span>лиса</span><span>мокрый эффект</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="reveal">Прайс<br>без звёздочек</h2>
+        <p class="reveal">Цена в списке окончательная. Материалы, снятие старых ресниц у нашего мастера и консультация уже входят.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Категории услуг">
+        <span class="tab-ink" id="tabInk"></span>
+        <button class="tab is-on" role="tab" aria-selected="true" data-tab="brows" id="tab-brows">Брови</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="lashes" id="tab-lashes">Ресницы</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="combo" id="tab-combo">Комплексы</button>
+      </div>
+
+      <div class="price" id="priceList" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="reveal">Мастера</h2>
+        <p class="reveal">Каждая проходит повышение квалификации раз в полгода. Наведите на карточку.</p>
+      </div>
+      <div class="team-grid">
+        <article class="master tilt" style="--c:var(--pink)">
+          <div class="ava"><span>А</span><img src="assets/flower.svg" alt=""></div>
+          <h3>Алина</h3>
+          <p class="role">Бровист, топ-мастер</p>
+          <ul class="tags"><li>архитектура</li><li>хна</li><li>ламинирование</li></ul>
+          <p class="exp"><b>6 лет</b> опыта · 3 400+ клиентов</p>
+        </article>
+        <article class="master tilt" style="--c:var(--yellow)">
+          <div class="ava"><span>В</span><img src="assets/star.svg" alt=""></div>
+          <h3>Вика</h3>
+          <p class="role">Лэшмейкер</p>
+          <ul class="tags"><li>классика</li><li>2D–3D</li><li>эффект лисы</li></ul>
+          <p class="exp"><b>4 года</b> опыта · 1 900+ клиентов</p>
+        </article>
+        <article class="master tilt" style="--c:var(--mint)">
+          <div class="ava"><span>С</span><img src="assets/heart.svg" alt=""></div>
+          <h3>Соня</h3>
+          <p class="role">Брови и ресницы</p>
+          <ul class="tags"><li>ламинирование</li><li>ботокс</li><li>окрашивание</li></ul>
+          <p class="exp"><b>3 года</b> опыта · 1 200+ клиентов</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="reveal">Говорят<br>клиентки</h2>
+        <p class="reveal">Тяните ленту в сторону. Средняя оценка 4,9 из 5.</p>
+      </div>
+    </div>
+    <div class="rev-strip" id="revStrip" tabindex="0" aria-label="Отзывы, листаются по горизонтали">
+      <figure class="rev" style="--c:var(--yellow);--rot:-3deg"><div class="stars">★★★★★</div><blockquote>Алина впервые за десять лет сделала брови под моё лицо, а не под моду. Хожу уже полгода.</blockquote><figcaption>Марина · брови</figcaption></figure>
+      <figure class="rev" style="--c:var(--mint);--rot:2deg"><blockquote>Ресницы держатся четыре недели, ни одна не легла криво. Вика спокойно объяснила уход.</blockquote><div class="stars">★★★★★</div><figcaption>Даша · наращивание 2D</figcaption></figure>
+      <figure class="rev" style="--c:var(--white);--rot:-1deg"><div class="stars">★★★★★</div><blockquote>Записалась онлайн в 23:00 на утро. Пришла, кофе, музыка, ушла через 50 минут с ламинированием.</blockquote><figcaption>Катя · ламинирование ресниц</figcaption></figure>
+      <figure class="rev" style="--c:var(--pink);--rot:3deg"><blockquote>Цена совпала с прайсом до рубля. Это редкость, спасибо.</blockquote><div class="stars">★★★★★</div><figcaption>Оля · комплекс</figcaption></figure>
+      <figure class="rev" style="--c:var(--lilac);--rot:-2deg"><div class="stars">★★★★☆</div><blockquote>Результат отличный, но в субботу пришлось подождать минут десять. В остальном только хорошее.</blockquote><figcaption>Лена · коррекция и хна</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="wrap booking-in">
+      <div class="booking-side">
+        <h2 class="reveal">Запись<br>за минуту</h2>
+        <p>Выберите услугу, мастера и время. Администратор напишет в течение 15 минут, чтобы подтвердить.</p>
+        <ol class="steps-mini" id="stepsMini" aria-label="Шаги записи">
+          <li class="is-on">Услуга</li><li>Мастер</li><li>Время</li><li>Контакты</li>
+        </ol>
+      </div>
+
+      <form class="book" id="bookForm" novalidate>
+        <fieldset class="step is-on" data-step="0">
+          <legend>Что делаем?</legend>
+          <div class="opts" id="optServices"></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="1">
+          <legend>К кому?</legend>
+          <div class="opts" id="optMasters">
+            <label class="opt"><input type="radio" name="master" id="m-any" value="Любой свободный мастер" checked><span>Любой свободный</span></label>
+            <label class="opt"><input type="radio" name="master" id="m-alina" value="Алина"><span>Алина</span></label>
+            <label class="opt"><input type="radio" name="master" id="m-vika" value="Вика"><span>Вика</span></label>
+            <label class="opt"><input type="radio" name="master" id="m-sonya" value="Соня"><span>Соня</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="2">
+          <legend>Когда удобно?</legend>
+          <div class="days" id="days"></div>
+          <div class="slots" id="slots"></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3">
+          <legend>Как с вами связаться?</legend>
+          <label class="field"><span>Имя</span><input id="name" name="name" autocomplete="given-name" placeholder="Анастасия" required></label>
+          <label class="field"><span>Телефон</span><input id="phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+          <p class="err" id="err" hidden></p>
+          <div class="summary" id="summary"></div>
+        </fieldset>
+
+        <div class="done" id="done" hidden>
+          <img src="assets/heart.svg" alt="" class="done-ico">
+          <h3>Заявка отправлена</h3>
+          <p id="doneTxt"></p>
+          <button type="button" class="btn btn-ghost-w" id="again">Записаться ещё</button>
+        </div>
+
+        <div class="book-nav" id="bookNav">
+          <button type="button" class="btn btn-ghost-w" id="back" disabled>Назад</button>
+          <button type="button" class="btn btn-yellow" id="next">Дальше <span class="arr">→</span></button>
+        </div>
+      </form>
+    </div>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq-in">
+      <h2 class="reveal">Частые<br>вопросы</h2>
+      <div class="faq-list">
+        <details><summary>Сколько держатся нарощенные ресницы?</summary><p>Обычно 3–4 недели. Коррекцию советуем делать через 2–3 недели, она стоит дешевле нового наращивания.</p></details>
+        <details><summary>Можно ли ламинировать брови беременным?</summary><p>Составы мы подбираем мягкие, но на этот период лучше получить согласие врача. Окрашивание хной подходит почти всем.</p></details>
+        <details><summary>Что, если не понравится результат?</summary><p>Напишите в течение трёх дней. Мастер бесплатно исправит то, что можно исправить, или вернём деньги за услугу.</p></details>
+        <details><summary>Нужно ли приходить без макияжа?</summary><p>Желательно без туши и теней. Если не получилось, ничего страшного, у нас есть средства для снятия.</p></details>
+        <details><summary>Как перенести запись?</summary><p>Напишите или позвоните не позже чем за 3 часа. Перенос бесплатный.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contacts">
+  <div class="wrap foot-in">
+    <div class="foot-col">
+      <p class="chip chip-pink">Ждём каждый день</p>
+      <p class="addr">Красноярск,<br>ул. Ленина, 113, офис 4</p>
+      <p class="muted">10:00–21:00 без выходных · 2 этаж, вход со двора</p>
+    </div>
+    <div class="foot-col">
+      <p class="muted">Телефон</p>
+      <p class="phone" id="phoneTxt">+7 391 200-45-67</p>
+      <button class="btn btn-yellow btn-sm" id="copyPhone">Скопировать номер</button>
+      <p class="muted mail-label">Почта для анонимных писем</p>
+      <a class="mail" href="mailto:hello@hlop.example">hello@hlop.example</a>
+    </div>
+    <p class="mega" aria-hidden="true">хлоп!</p>
+    <div class="foot-bottom">
+      <p class="muted small">© 2026 Студия «Хлоп». Все права защищены.</p>
+      <p class="muted small">Тексты, иллюстрации и дизайн сайта охраняются авторским правом. Копирование без согласия студии запрещено.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>
